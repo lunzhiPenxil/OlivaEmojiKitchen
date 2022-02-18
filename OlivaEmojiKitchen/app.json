@@ -1,0 +1,17 @@
+{
+    "name" : "OlivaEmoji混合器",
+    "author" : "lunzhiPenxil",
+    "namespace" : "OlivaEmojiKitchen",
+    "message_mode" : "olivos_string",
+    "version" : "0.0.1",
+    "svn" : 10,
+    "compatible_svn" : 81,
+    "priority" : 40000,
+    "support" : [
+        {
+            "sdk" : "all",
+            "platform" : "all",
+            "model" : "all"
+        }
+    ]
+}
