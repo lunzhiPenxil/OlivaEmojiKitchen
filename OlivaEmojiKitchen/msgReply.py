@@ -46,6 +46,11 @@ def unity_reply(plugin_event, Proc):
                 tmp_data_str = tmp_data_str[len(left_this) + 1:]
                 break
 
+    if plugin_event.platform['platform'] == 'kaiheila':
+        if len(tmp_data_str) + 1 >= len('20'):
+            if '20' == tmp_data_str[:len('20')]:
+                tmp_data_str = tmp_data_str[len('20') + 1:]
+
     if tmp_data_left != None:
         for tmp_listEmoji_this in OlivaEmojiKitchen.emojiData.listEmoji:
             right_this = '-'.join(
