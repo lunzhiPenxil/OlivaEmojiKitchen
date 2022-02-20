@@ -66,6 +66,11 @@ def unity_reply(plugin_event, Proc):
                     tmp_data_str = tmp_data_str[len(right_this):]
                     break
 
+    if plugin_event.platform['platform'] == 'kaiheila':
+        if len(tmp_data_str) + 1 >= len('-20'):
+            if '-20' == tmp_data_str[:len('-20')]:
+                tmp_data_str = tmp_data_str[len('-20') + 1:]
+
     tmp_reply_url = None
     if tmp_obj_left != None and tmp_obj_right != None and len(tmp_data_str) == 0:
         if True:
